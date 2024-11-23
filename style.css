@@ -67,7 +67,17 @@ h1{
     align-items: center;
 }
 
-.subforum-devider{
+.hor-center{ /* centers components horizontally */
+    display: flex;
+    justify-content: center;
+}
+
+.vert-center{ /* centers components vertically */
+    display: flex;
+    align-items: center;
+}
+
+.subforum-divider{
     display: none;   
 }
 
@@ -84,6 +94,7 @@ h1{
         grid-template-rows: 65% 35%;
     }
 
+ 
     .subforum-devider{
         display: block;
         border: 0;
@@ -117,3 +128,161 @@ h1{
         font-size: 16px;
     }
   }
+
+
+  /* Nav Bar */
+
+  header{
+    margin-inline: 10px;
+  }
+
+  .navbar{
+    display: flex;
+    align-items: center;
+  }
+
+.navigation{
+    background-color: rgb(11, 53, 53);
+    padding: 10px; /* find if this is enough room, change if too close */
+    width: 65%;
+    display: inline-block; 
+    border-radius: 5px;
+    max-height: 80px;
+    margin-right: 10px;
+}
+
+/* does this remove the bullet links     -yes*/
+.nav-list{
+    list-style-type: none;
+    overflow: hidden;
+}
+.nav-items a{
+    float: right;
+    display: block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color: #87CEFA;
+}
+
+.nav-items a:hover{
+    background-color: #292B2E;
+}
+
+.close-icon i{
+    font-size: 60px;
+    float: left;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.bar-icon{
+    font-size: 60px;
+    display: inline-block;
+    margin-right: 10px;
+    color: #D3D3D3;
+    cursor: pointer;
+
+}
+
+@font-face{
+    font-family: aquire;
+    src:url(Aquire.otf);
+}
+
+
+.brand{
+    font-size: 60px;
+    font-family: aquire;
+    display: inline-block;
+}
+
+
+/* nav bar for smartphone */
+
+@media screen and (max-width: 460px){
+    .navigation{
+        max-height: auto;
+    }
+    
+
+    .nav-items a{
+        float: left;
+        display: inline;
+        text-align: center;
+        margin-inline: 3px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    
+    .close-icon i{
+        font-size: 30px;
+       
+    }
+    
+    .hide{
+        display: none;
+    }
+
+    .brand{
+        font-size: 20px;
+    }
+}
+
+
+/* search box */
+
+.search-box{
+    border:solid 1px #87CEFA;
+    margin-top: 20px;
+    padding: 40px;
+    display: flex; /* center elements*/
+    justify-content: center;
+    box-shadow: 1px 2px 3px #87CEFA;
+
+}
+
+
+.search-box select{
+    padding: 10px;
+}
+
+.search-box input{
+    padding: 10px;
+}
+
+.search-box button{
+    padding: 10px;
+    background-color: #87CEFA;
+    color: #292B2E;
+}
+
+.search-box button.hover{
+    background-color: #292B2E;
+    color: #87CEFA;
+    box-shadow: 1px 2px 3px #87CEFA;
+}
+
+/* Search box for smart phone */
+
+@media screen and (max-width: 460px) {
+    .search-box input, .search-box button, .search-box select{
+        min-width: 300px;
+        margin-top: 5px;
+    }
+}
+
+.forum-info{
+    padding: 20px;
+    background-color: #292B2E;
+}
+
+.chart{
+    font-size: 20px;
+    font-weight: bold;
+}
