@@ -39,7 +39,7 @@ setInterval(function() {
     homePostStat.innerHTML = posts;
     homeTopicStat.innerHTML = topics;
     homeUserStat.innerHTML = users;
-    posts += Math.random(1,5);
-    topics += Math.random(1,5);
-    users += Math.random(1,5);
+    posts += Math.floor(Math.random(),6);
+    topics += Math.floor(Math.random(),6);
+    users += Math.floor(Math.random(),6);
 }, 5000)
