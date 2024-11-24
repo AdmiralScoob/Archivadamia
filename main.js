@@ -40,6 +40,6 @@ setInterval(function() {
     homeTopicStat.innerHTML = topics;
     homeUserStat.innerHTML = users;
     posts += 3;
-    topics += 2;
-    users += 3;
+    topics += 5;
+    users += 1;
 }, 5000)
