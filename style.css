@@ -1,4 +1,4 @@
-/* global */
+/* Global */
 
 *{
     box-sizing:  border-box;
@@ -13,16 +13,16 @@ html{
 }
 
 a{
-    color: #87CEFA; /* styles all links */
+    color: #87CEFA; /* Styles all links */
     font-weight: bolder;
-    text-decoration: none; /* removes underline from links */
+    text-decoration: none; /* Removes underline from links */
 }
 
 h1{
-    font-weight:bolder; /* hopefully this is clear enough (change if not cooper) */
+    font-weight:bolder; /* Hopefully this is clear enough (change if not Cooper) */
 }
 
-/* Homepage style */
+/* Homepage Style */
 
 .container{
     margin: 20px;
@@ -61,7 +61,7 @@ h1{
     background-color:#292B2E;
 }
 
-.center{ /* centers components horizontally and vertically */
+.center{ /* Centers components horizontally and vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +71,7 @@ h1{
     display: none;   
 }
 
-/* for the smart phone*/
+/* For Phones*/
 @media screen and (max-width: 460px) {
     .container{
         margin: 10px;
@@ -94,7 +94,7 @@ h1{
   }
 
 
-   /* for tablets */
+   /* For Tablets */
   @media screen and (min-width: 460px) and (max-width: 1024px) {
     .container{
         margin: 15px;
@@ -120,7 +120,7 @@ h1{
   }
 
 
-  /* Nav Bar */
+  /* NAV Bar */
 
   header{
     margin-inline: 10px;
@@ -133,7 +133,7 @@ h1{
 
 .navigation{
     background-color: rgb(11, 53, 53);
-    padding: 10px; /* find if this is enough room, change if too close */
+    padding: 10px; /* Find if this is enough room, change if too close */
     width: 65%;
     display: inline-block; 
     border-radius: 5px;
@@ -141,7 +141,7 @@ h1{
     margin-right: 10px;
 }
 
-/* does this remove the bullet links     -yes*/
+/* Does this remove the bullet links?     -yes*/
 .nav-list{
     list-style-type: none;
     overflow: hidden;
@@ -192,7 +192,7 @@ h1{
 }
 
 
-/* nav bar for smartphone */
+/* NAV Bar for Phones */
 
 @media screen and (max-width: 460px){
     .navigation{
@@ -225,13 +225,13 @@ h1{
 }
 
 
-/* search box */
+/* Search Box */
 
 .search-box{
     border:solid 1px #87CEFA;
     margin-top: 20px;
     padding: 40px;
-    display: flex; /* center elements*/
+    display: flex; /* Center elements*/
     justify-content: center;
     box-shadow: 1px 2px 3px #87CEFA;
 
@@ -258,7 +258,7 @@ h1{
     box-shadow: 1px 2px 3px #87CEFA;
 }
 
-/* Search box for smart phone */
+/* Search Box for Phones */
 
 @media screen and (max-width: 460px) {
     .search-box input, .search-box button, .search-box select{
